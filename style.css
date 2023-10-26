@@ -1,0 +1,381 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(#1A1919, #333333,#333333, #333333, #1A1919);
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+span {
+  display: block;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-title {
+  color: #ffffff;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.main-title > span{
+  margin: 0px 15px;
+}
+
+.navbar > ul {
+  padding: 5px;
+  margin: 0;
+}
+
+.menu-icon > span{
+  display: block;
+  margin-top: 4px;
+  height: 7px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-item > a {
+  color: #FFFF33;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.-hidden {
+  display: none;
+}
+
+#content > section:not(:first-child) {
+  margin-top: 45px;
+}
+
+#introduction {
+  margin-top: 20px;
+}
+
+#introduction > .title {
+  color: #00FF00;
+  text-align: center;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+#introduction > .subtitle {
+  color: #FFFF33;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-size: 1.3em;
+}
+
+#introduction > .links {
+  display: flex;
+  justify-content: center;
+  margin: 5px 15px;
+  font-size: 1.3em;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#introduction > .links .social-link {
+  color: #2F80ED;
+  display: flex;
+  align-items: center;
+}
+
+#introduction > .links .social-icon {
+  width: 26px;
+  fill: #2F80ED;
+  margin-right: 5px;
+}
+
+.secondary-title {
+  font-size: 1.5em;
+  color: #00FF00;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card {
+  max-width: 500px;
+}
+
+.card > .card__content {
+  background-color: #1A1919;
+  color: #FFFF33;
+  padding: 45px 15px;
+  border-radius: 15px;
+  height: 200px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.card > .card__title {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  font-size: 1.4em;
+  margin-top: 5px;
+}
+
+.slider {
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  box-sizing: border-box;
+}
+
+#skill-list {
+  display: flex;
+  margin: 0;
+  height: fit-content;
+  width: 100%;
+  justify-content: space-between;
+
+}
+#skill-list .skill-list__image {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+#skill-list .skill-list__image.-node {
+  background: #539E43;
+}
+
+#skill-list .skill-list__image.-react {
+  background: #00D8FF;
+}
+#skill-list .skill-list__image.-mongo {
+  background: #58AA50;
+}
+#skill-list .skill-list__image.-angular {
+  background: #E30037;
+}
+#skill-list .skill-list__image.-javascript {
+  background: #F1DC5E;
+}
+#skill-list .skill-list__image.-css {
+  background: #2B7CC3;
+}
+#skill-list .skill-list__image.-html {
+  background: #EA4C31;
+}
+#skill-list .skill-list__image.-vue {
+  background: #28BA86;
+}
+
+.skill-list__item > .skill-list__title {
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 45px;
+}
+
+#about > .about__image {
+  height: 150px;
+  border-radius: 200px;
+}
+
+#about .about__content {
+  color: #ffffff;
+  text-align: center;
+}
+
+#projects .projects__project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+
+#projects .card {
+  width: 100%;
+}
+
+#projects .card__content {
+  background-color: #1A1919;
+  box-shadow: 0px -2px 5px #fff inset;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#projects .projects__shortly {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 32px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+#projects .projects__project-image {
+  height: 100%;
+  width: 100%;
+}
+
+#contact #contact__form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact label {
+  color: #ffffff;
+}
+
+#contact input {
+  height: 45px;
+}
+
+#contact input, #contact textarea {
+  background-color: #333333;
+  border-color: #F1DC5E;
+  color: #F1DC5E;
+  padding: 15px 15px;
+  box-sizing: border-box;
+}
+
+#contact input:focus, #contact textarea:focus {
+  outline: none !important;
+  border-color: #00FF00;
+  color: #00FF00;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.btn-primary {
+  color: #00FF00;
+  background: #333333;
+  border: solid 1px #00FF00;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-primary:active {
+  color: #F1DC5E;
+  background: #333333;
+  border: solid 1px #F1DC5E;
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* medium screens */
+@media (min-width: 800px) {
+
+  #introduction > .links {
+    max-width: 350px;
+  }
+
+  #differences-list {
+    display: flex;
+    gap: 25px;
+  }
+
+  #differences-list > .card {
+    min-width: 350px;
+    flex-basis: 32%;
+  }
+
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  
+  .toolbar > h1{
+    display: flex;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .navbar hr {
+    display: none;
+  }
+  .navbar > ul {
+    display: flex;
+    gap: 15px
+  }
+
+  .menu-item > a {
+    font-size: 1.4em;
+  }
+
+  #about {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #about > .about__image {
+    margin-right: 50px;
+    height: 180px;
+  }
+
+  #projects .projects__project-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #projects .card {
+    flex-basis: 30%;
+  }
+
+  #contact .btn-primary {
+    align-self: flex-end;
+    max-width: 300px;
+  }
+
+}
+
+/* large screens */
